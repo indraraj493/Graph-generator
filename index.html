@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my graph genrator</title>
+	<script src="https://unpkg.com/mathjs@5.0.3/dist/math.min.js"></script>
+	<style type="text/css">
+
+		#title{
+			font-family: "Comic Sans MS";
+			font-size: 50px;
+			margin-top: 2vh;
+		}
+
+	</style>
+</head>
+<body>
+
+<div style="text-align: center;">
+	<div id="title">My Graph Genrator</div>
+</div>
+<div style="margin-left: 80vw;">
+	Scale : 
+	<input id="scaleId" type="text" name="scale" value="20" style="width: 30px; text-align: center;">
+</div>
+<div style="text-align: center;">
+	<canvas id="canvas" style="width: 800px; height: 480px; background: #fff; margin-top: 8vh;">Canvas is not supported in your browser.</canvas>
+</div>
+<div style="text-align: center; margin-top: 5vh;">
+		y =
+		<input id="eqnInput" type="text" name="equation" value="sin(x)">
+		<input type="submit" value="Plot" onclick="plot();" />
+	</div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
