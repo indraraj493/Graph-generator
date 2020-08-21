@@ -4,21 +4,6 @@ var input = document.getElementById("eqnInput");
 var width = canvas.width;
 var height = canvas.height;
 
-input.addEventListener("keyup",function(event){
-
-	if(event.keyCode==13){//enter key listen
-		plot();
-	}
-
-},false);
-
-document.getElementById("scaleId").addEventListener("keyup",function(event){
-
-	if(event.keyCode==13){//enter key listen
-		plot();
-	}
-
-},false);
 
 function draw() {
 
